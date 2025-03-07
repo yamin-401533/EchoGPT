@@ -1,6 +1,6 @@
-
+/* Calendar.module.css */
 .container {
-  max-width: 1480px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -69,6 +69,7 @@
   margin-bottom: 2rem;
   border-bottom: 1px solid var(--neutral-200);
   padding-bottom: 1rem;
+  overflow-x: auto;
 }
 
 .toolButton {
@@ -84,6 +85,7 @@
   transition: all 0.25s ease;
   font-weight: 500;
   position: relative;
+  white-space: nowrap;
 }
 
 .toolButton:hover {
@@ -514,7 +516,6 @@
   font-size: 0.9375rem;
 }
 
-
 /* Notification */
 .notification {
   position: fixed;
@@ -547,25 +548,98 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 2.25rem;
+  }
+
+  .main {
+    padding: 2rem;
+  }
+
+  .toolButton {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .promptTextarea {
+    min-height: 120px;
+  }
+
+  .generateButton {
+    padding: 0.75rem 1.25rem;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1rem;
   }
-  
+
   .header h1 {
     font-size: 2rem;
   }
-  
-  .toolsNav {
-    justify-content: space-between;
+
+  .main {
+    padding: 1.5rem;
   }
-  
+
+  .toolsNav {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
   .toolButton {
     padding: 0.5rem 0.75rem;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
-  
+
+  .promptTextarea {
+    min-height: 100px;
+  }
+
+  .generateButton {
+    padding: 0.75rem 1rem;
+  }
+
   .promptActions {
     flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.75rem;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  .toolButton {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .promptTextarea {
+    min-height: 80px;
+  }
+
+  .generateButton {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .promptActions {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
