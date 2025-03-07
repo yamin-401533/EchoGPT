@@ -8,6 +8,13 @@ This project is a chat application built with Next.js that integrates a GPT-base
 - Real-time chat interface with message history.
 - Light and dark theme toggle.
 - Responsive design for various screen sizes.
+![image](https://github.com/user-attachments/assets/54e079b2-62c0-4749-b945-2db31f1c44d9)
+![image](https://github.com/user-attachments/assets/ee2b200b-2a17-4eaa-90af-0fdfd3d6a2da)
+![image](https://github.com/user-attachments/assets/7ab5c83f-8a78-4572-abb7-40f6993383de)
+
+
+
+
 
 ## Getting Started
 
