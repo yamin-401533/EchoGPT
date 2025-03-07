@@ -1,0 +1,95 @@
+.timeUpdate {
+  padding: 1.5rem;
+  background-color: var(--neutral-100);
+  color: var(--foreground);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.05),
+    0 1px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.timeUpdate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--primary-dark, #1a365d), transparent);
+  opacity: 0.6;
+}
+
+.timeUpdate h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary-dark, #1a365d);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.timeUpdate p {
+  font-size: 2.25rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, var(--neutral-300, #cbd5e0), var(--neutral-600, #4a5568));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  padding: 0.25rem 0;
+  line-height: 1.2;
+  position: relative;
+}
+
+.dateDisplay {
+  font-size: 0.9rem;
+  color: var(--neutral-500, #718096);
+  margin-top: 0.75rem;
+  font-weight: 400;
+}
+
+/* New animation that combines subtle effects */
+.animate {
+  animation: timeUpdate 0.8s cubic-bezier(0.11, 0.8, 0.29, 1);
+}
+
+@keyframes timeUpdate {
+  0% {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional hover effect for interactive feel */
+.timeUpdate:hover {
+  box-shadow: 
+    0 6px 16px rgba(0, 0, 0, 0.08),
+    0 2px 5px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .timeUpdate {
+    padding: 1.25rem 1rem;
+  }
+  
+  .timeUpdate p {
+    font-size: 1.75rem;
+  }
+}

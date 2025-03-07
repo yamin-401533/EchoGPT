@@ -1,0 +1,92 @@
+:root {
+  --primary: #2C6975;         
+  --primary-dark: #1A4A5A;    
+  --primary-light: #68B2A0;   
+
+  --accent: #CDE0C9;          
+  --accent-light: #EDECDE;    
+  --accent-secondary: #68B2A0; 
+  --accent-tertiary: #2C6975;  
+
+  --neutral-50: #FFFFFF;      
+  --neutral-100: #f1f8f1;     
+  --neutral-200: #CDE0C9;     
+  --neutral-300: #68B2A0;     
+  --neutral-400: #2C6975;     
+  --neutral-500: #1A4A5A;     
+  --neutral-600: #0F2E3D;     
+  --neutral-700: #081C25;     
+  --neutral-800: #040E13;     
+  --neutral-900: #000000;     
+
+  --success: #68B2A0;         
+  --warning: #EDECDE;         
+  --error: #FF6B6B;           
+  --info: #2C6975;            
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 2px 6px rgba(44, 105, 117, 0.1);
+  --shadow-md: 0 10px 20px rgba(44, 105, 117, 0.15);
+  --shadow-lg: 0 20px 40px rgba(44, 105, 117, 0.2);
+  --shadow-glow: 0 0 25px rgba(44, 105, 117, 0.25);
+
+  --background: #FFFFFF;       
+  --foreground: #1A4A5A;       
+}
+
+[data-theme="dark"] {
+  --primary: #1E1E2E;         
+  --primary-dark: #161625;    
+  --primary-light: #2E2E3E;   
+
+  --accent: #F43E5C;          
+  --accent-light: #FF6B81;    
+  --accent-secondary: #F43E5C; 
+  --accent-tertiary: #FF6B81;  
+
+   /* Professional Dark Neutral Palette */
+  --neutral-50: rgb(12, 18, 34);  /* Darkest - for backgrounds in dark mode */
+  --neutral-100: #1e293b;
+  --neutral-200: #334155;
+  --neutral-300: #475569;
+  --neutral-400: #64748b;
+  --neutral-500: #94a3b8;
+  --neutral-600: #cbd5e1;
+  --neutral-700: #e2e8f0;
+  --neutral-800: #f1f5f9;
+  --neutral-900: #f8fafc;
+  
+  
+
+  --success: #4CAF50;         
+  --warning: #FFC107;         
+  --error: #F44336;           
+  --info: #2196F3;            
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.35);
+  --shadow-glow: 0 0 25px rgba(244, 62, 92, 0.5);
+
+  --background: #121212;      
+  --foreground: #E0E0E0;      
+}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--neutral-50);
+  color: var(--neutral-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

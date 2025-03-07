@@ -1,0 +1,10 @@
+.weatherUpdate {
+  padding: 1rem;
+  background-color: var(--neutral-100);
+  color: var(--foreground);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  margin: 1rem;
+}

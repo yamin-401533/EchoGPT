@@ -1,0 +1,70 @@
+.taskList {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-200);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+  max-width: 258px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.taskList h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+  text-align: center;
+}
+
+.taskList .input {
+  width: 100%;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  margin-right: 10px;
+}
+
+.taskList .addButton {
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: wheat;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  margin: 5px;
+}
+
+.taskList .addButton:hover {
+  background-color: var(--primary-dark);
+}
+
+.taskList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.taskList .task {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--neutral-200);
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.taskList .removeButton {
+  background-color: var(--error);
+  color: var(--neutral-50);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.taskList .removeButton:hover {
+  background-color: var(/* stylelint-disable-next-line rule */);
+}
