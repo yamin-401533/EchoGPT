@@ -44,17 +44,18 @@ const ChatPage: React.FC = () => {
       <div className={styles.mainContainer}>
         <div className={styles.sidebarLeft}>
           <WeatherUpdate />
-          <CalendarComponent />
+          <TaskList />
+          <MindfulnessTips />
         </div>
         <div className={styles.chatContainer}>
           <ChatHistory messages={messages} />
           <ChatInput onSendMessage={handleSendMessage} />
+          <CalendarComponent />
         </div>
         <div className={styles.sidebarRight}>
           <TimeUpdate />
           <Notes />
-          <TaskList />
-          <MindfulnessTips />
+          
         </div>
       </div>
     </>
